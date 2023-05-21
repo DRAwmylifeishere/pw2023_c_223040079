@@ -1,0 +1,78 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(235, 127, 127, 0.8);
+  color: black;
+  padding-top: 11rem;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.judul {
+  text-align: center;
+  padding-left: 25px;
+  line-height: 1.6rem;
+  color: white;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+}
+
+span {
+  color: purple;
+}
+
+.regist {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.regist label,
+input {
+  display: block;
+}
+
+.regist button {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  border-style: groove;
+  box-shadow: 1px 1px 3px rgba(218, 21, 21, 1);
+  cursor: pointer;
+}
+
+.regist button:hover {
+  transform: perspective(25px) translateY(1px);
+  transition: 0.5s;
+}
+
+.login {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.login li {
+  border: 2px solid #fff;
+  box-shadow: 1px 1px 3px rgba(218, 21, 21, 1);
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.login a {
+  color: #000;
+  text-decoration: none;
+}
+
+.login a:hover {
+  color: rgba(95, 0, 95, 0.6);
+  transition: 0.3s;
+}
+
+.login:hover {
+  transform: perspective(20px) translateZ(3px);
+  transition: 0.5s;
+}
