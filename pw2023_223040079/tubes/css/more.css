@@ -1,0 +1,136 @@
+:root {
+  --primary: rgba(218, 21, 21, 1);
+  --bg: rgba(235, 127, 127, 0.8);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(235, 127, 127, 0.8);
+  color: black;
+  padding-top: 6rem;
+}
+
+/* Navbar Section Start*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: rgba(235, 127, 127, 0.8);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 580;
+  color: white;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: purple;
+}
+
+.navbar .navbar-nav a {
+  color: black;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: aliceblue;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transition: 0.4s linear;
+  transform: scaleX(0);
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.7);
+}
+
+.navbar .navbar-extra a {
+  color: aliceblue;
+  margin: 0 0.7rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: rgba(49, 47, 47, 0.637);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.daftar {
+  align-items: center;
+  display: inline-block;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(211, 100, 100, 0.644);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credits {
+  font-size: 0.8rem;
+  color: #fff;
+  display: block;
+  padding: 0px 2rem;
+}
+
+footer .credits a {
+  color: black;
+  font-weight: 700;
+  margin-top: 2px;
+}
